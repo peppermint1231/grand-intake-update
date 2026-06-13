@@ -1,0 +1,6 @@
+여기에 Android Studio에서 빌드한 release APK를 넣으세요.
+
+현재 version.json 기준 파일명:
+grand-intake-v18.8.apk
+
+실제 업로드 후 version.json의 apkUrl에서 YOUR_GITHUB_ID를 본인 GitHub 아이디로 바꿔야 합니다.
