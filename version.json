@@ -1,0 +1,12 @@
+{
+  "appName": "그랜드 초진설문지",
+  "packageName": "kr.co.grand.intake",
+  "versionName": "18.8",
+  "versionCode": 188,
+  "apkFileName": "grand-intake-v18.8.apk",
+  "apkUrl": "https://YOUR_GITHUB_ID.github.io/grand-intake-update/apk/grand-intake-v18.8.apk",
+  "releaseNote": "마지막 버튼 확인 팝업, 필수항목 이동, 수정/삭제 권한잠금, OneDrive 자동 갱신 개선",
+  "required": false,
+  "updatedAt": "2026-06-13",
+  "minSupportedVersionCode": 180
+}
