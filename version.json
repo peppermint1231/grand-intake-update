@@ -1,12 +1,12 @@
 {
   "appName": "그랜드 초진설문지",
   "packageName": "kr.co.grand.intake",
-  "versionName": "18.8",
-  "versionCode": 188,
-  "apkFileName": "grand-intake-v18_8.apk",
-  "apkUrl": "https://peppermint1231.github.io/grand-intake-update/apk/grand-intake-v18_8.apk",
-  "releaseNote": "마지막 버튼 확인 팝업, 필수항목 이동, 수정/삭제 권한잠금, OneDrive 자동 갱신 개선",
-  "required": false,
-  "updatedAt": "2026-06-13",
+  "versionName": "2026.06.15.1636",
+  "versionCode": 189,
+  "apkFileName": "grand-intake-v2026_06_15_1636.apk",
+  "apkUrl": "https://peppermint1231.github.io/grand-intake-update/apk/grand-intake-v2026_06_15_1636.apk",
+  "releaseNote": "그랜드 초진설문지 v2026.06.15.1636 / versionCode 189 업데이트 APK 배포",
+  "required": true,
+  "updatedAt": "2026-06-15 10:07:06",
   "minSupportedVersionCode": 180
 }
