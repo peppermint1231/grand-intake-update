@@ -1,0 +1,286 @@
+{
+  "generatedAt": "2026-06-19 05:07:41",
+  "app": {
+    "appName": "그랜드 초진설문지",
+    "packageName": "kr.co.grand.intake",
+    "versionName": "2026.06.19.1406",
+    "versionCode": 189,
+    "apkFileName": "grand-intake-v2026_06_19_1406.apk",
+    "apkUrl": "https://peppermint1231.github.io/grand-intake-update/apk/grand-intake-v2026_06_19_1406.apk",
+    "releaseNote": "그랜드 초진설문지 v2026.06.19.1406 / versionCode 189 업데이트 APK 배포",
+    "required": true,
+    "updatedAt": "2026-06-19 05:07:38",
+    "minSupportedVersionCode": 180
+  },
+  "sections": [
+    {
+      "title": "1. 기본 정보",
+      "items": [
+        {
+          "label": "방문일자",
+          "type": "date",
+          "required": true
+        },
+        {
+          "label": "환자 구분",
+          "type": "select",
+          "required": true,
+          "options": [
+            "내국인",
+            "외국인"
+          ]
+        },
+        {
+          "label": "성명",
+          "type": "text",
+          "required": true
+        },
+        {
+          "label": "핸드폰",
+          "type": "text",
+          "required": true
+        },
+        {
+          "label": "주민등록번호 / 외국인등록번호",
+          "type": "text",
+          "required": true
+        },
+        {
+          "label": "성별/나이",
+          "type": "auto/manual",
+          "required": true
+        },
+        {
+          "label": "주소",
+          "type": "select/input",
+          "required": true
+        },
+        {
+          "label": "이메일",
+          "type": "optional",
+          "required": false
+        }
+      ]
+    },
+    {
+      "title": "2. 상담 희망 항목",
+      "items": [
+        {
+          "label": "상담 구분",
+          "type": "radio",
+          "required": true,
+          "options": [
+            "미용시술 상담 희망",
+            "미용시술 상담 없이 1회성 시술만 희망",
+            "피부질환 진료와 미용시술 상담 희망",
+            "피부질환 진료만 희망"
+          ]
+        },
+        {
+          "label": "원하는 상담/시술 내용",
+          "type": "textarea",
+          "required": "피부질환 진료만 희망 외 선택 시 필수"
+        }
+      ]
+    },
+    {
+      "title": "3. 내원경로",
+      "items": [
+        {
+          "label": "내원경로",
+          "type": "checkbox",
+          "required": true,
+          "options": [
+            "네이버블로그",
+            "네이버플레이스",
+            "네이버검색광고",
+            "네이버예약",
+            "카카오채널",
+            "인스타그램",
+            "지인소개",
+            "기타",
+            "현장방문"
+          ]
+        },
+        {
+          "label": "기타 내원경로",
+          "type": "text",
+          "required": "기타 선택 시 필수"
+        }
+      ]
+    },
+    {
+      "title": "4. 병력 및 주의사항",
+      "items": [
+        {
+          "label": "만성질환",
+          "type": "checkbox",
+          "required": true,
+          "options": [
+            "고혈압",
+            "고지혈증",
+            "당뇨",
+            "심장질환",
+            "기타",
+            "없음"
+          ]
+        },
+        {
+          "label": "만성질환 기타",
+          "type": "textarea",
+          "required": "기타 선택 시 필수"
+        },
+        {
+          "label": "알레르기 / 특이체질",
+          "type": "checkbox",
+          "required": true,
+          "options": [
+            "리도카인 알레르기",
+            "켈로이드 체질",
+            "기타",
+            "없음"
+          ]
+        },
+        {
+          "label": "알레르기 / 특이체질 기타",
+          "type": "textarea",
+          "required": "기타 선택 시 필수"
+        },
+        {
+          "label": "복용 중인 약물",
+          "type": "checkbox",
+          "required": true,
+          "options": [
+            "아스피린",
+            "와파린",
+            "기타",
+            "없음"
+          ]
+        },
+        {
+          "label": "복용 중인 약물 기타",
+          "type": "textarea",
+          "required": "기타 선택 시 필수"
+        },
+        {
+          "label": "기타 주의사항",
+          "type": "checkbox",
+          "required": true,
+          "options": [
+            "임신",
+            "모유수유",
+            "기타",
+            "해당없음"
+          ]
+        },
+        {
+          "label": "기타 주의사항 기타",
+          "type": "textarea",
+          "required": "기타 선택 시 필수"
+        },
+        {
+          "label": "이전 시술",
+          "type": "checkbox",
+          "required": true,
+          "options": [
+            "필러",
+            "성형수술",
+            "기타",
+            "없음"
+          ]
+        },
+        {
+          "label": "이전 시술 기타 / 특이사항",
+          "type": "textarea",
+          "required": "기타 선택 시 필수"
+        }
+      ]
+    },
+    {
+      "title": "5. 개인정보·민감정보 및 안내 확인",
+      "items": [
+        {
+          "label": "개인정보 수집·이용 안내 및 동의",
+          "type": "radio",
+          "required": true,
+          "options": [
+            "동의",
+            "비동의"
+          ],
+          "body": [
+            "본원은 진료 및 상담, 예약 확인, 본인 확인, 진료기록 작성, 수납 및 보험 청구 등 의료서비스 제공을 위해 개인정보를 수집·이용합니다.",
+            "수집 항목: 성명, 생년월일 또는 주민등록번호, 연락처, 주소, 내원경로, 병력, 복용약, 알레르기, 과거 시술 이력, 상담 희망 항목 등",
+            "이용 목적: 진료 접수, 진료 및 상담, 시술 전 확인, 진료기록 작성, 예약 안내, 수납 및 보험 청구 등",
+            "보유 및 이용기간: 의료법 등 관련 법령에서 정한 진료기록 보존기간 및 본원 내부 보존 기준에 따릅니다.",
+            "동의 거부 권리: 귀하는 개인정보 수집·이용 동의를 거부할 수 있으나, 필수정보 제공을 거부할 경우 진료 접수 또는 상담이 제한될 수 있습니다."
+          ]
+        },
+        {
+          "label": "민감정보 수집·이용 안내 및 동의",
+          "type": "radio",
+          "required": true,
+          "options": [
+            "동의",
+            "비동의"
+          ],
+          "body": [
+            "본원은 진료 및 시술 상담을 위해 건강상태, 병력, 복용약, 알레르기, 과거 시술 이력, 임신 여부 등 민감정보를 수집·이용할 수 있습니다.",
+            "해당 정보는 진료 및 상담 목적 외로 사용하지 않으며, 관련 법령 및 본원 내부 관리 기준에 따라 안전하게 보관합니다."
+          ]
+        },
+        {
+          "label": "마케팅 정보 수신 동의(선택)",
+          "type": "radio",
+          "required": false,
+          "options": [
+            "동의",
+            "비동의"
+          ],
+          "body": [
+            "본원은 이벤트, 혜택, 진료 안내 등 마케팅 정보 제공을 위해 성명, 휴대폰번호, 이메일 주소를 이용할 수 있습니다.",
+            "마케팅 정보 수신에 동의한 경우 문자(SMS/LMS/MMS) 및 이메일 수신에 동의한 것으로 봅니다.",
+            "마케팅 정보 수신 동의는 선택사항이며, 동의하지 않아도 진료 및 상담에는 불이익이 없습니다.",
+            "수신 동의는 언제든지 철회할 수 있습니다."
+          ]
+        },
+        {
+          "label": "CCTV 촬영 안내 확인",
+          "type": "radio",
+          "required": true,
+          "options": [
+            "동의",
+            "비동의"
+          ],
+          "body": [
+            "본원은 시설 안전, 범죄 예방, 분쟁 예방 등을 위해 병원 내 일부 구역에 CCTV를 운영하고 있습니다.",
+            "영상정보는 운영 목적 외로 사용하지 않으며, 보관 및 파기 기준에 따라 관리합니다."
+          ]
+        },
+        {
+          "label": "시술 전 일반 안내 확인",
+          "type": "radio",
+          "required": true,
+          "options": [
+            "동의",
+            "비동의"
+          ],
+          "body": [
+            "본인은 시술 전 현재 건강상태, 복용약, 알레르기, 임신 가능성, 과거 시술 이력 등을 사실대로 고지해야 함을 확인했습니다.",
+            "실제 보톡스, 필러, 레이저, 리프팅 등 시술 전에는 시술 종류에 따라 별도의 설명 및 시술 동의서 작성이 필요할 수 있음을 확인했습니다."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "6. 환자 자필 서명",
+      "items": [
+        {
+          "label": "환자 자필 서명",
+          "type": "signature",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "source": "uploaded APK assets/index.html"
+}
