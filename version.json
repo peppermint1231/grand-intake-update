@@ -1,12 +1,12 @@
 {
   "appName": "그랜드 초진설문지",
   "packageName": "kr.co.grand.intake",
-  "versionName": "v2026_09_03_1358",
-  "versionCode": 609031358,
-  "apkFileName": "grand-intake-v2026_09_03_1358.apk",
-  "apkUrl": "https://peppermint1231.github.io/grand-intake-update/apk/grand-intake-v2026_09_03_1358.apk",
-  "releaseNote": "그랜드 초진설문지 v2026_09_03_1358 업데이트 APK 배포",
+  "versionName": "v2026_09_03_1553",
+  "versionCode": 609031553,
+  "apkFileName": "grand-intake-v2026_09_03_1553.apk",
+  "apkUrl": "https://peppermint1231.github.io/grand-intake-update/apk/grand-intake-v2026_09_03_1553.apk",
+  "releaseNote": "통계·크게보기 유지 및 AI챗봇 내원경로 추가",
   "required": true,
-  "updatedAt": "2026-09-03 13:58:00",
+  "updatedAt": "2026-09-03 15:53:00",
   "minSupportedVersionCode": 180
 }
