@@ -1,0 +1,51 @@
+name: Reassemble Full Grand Intake APK
+
+on:
+  push:
+    branches:
+      - codex/repair-truncated-apk-1617
+    paths:
+      - ".release-parts/v2026_09_03_1617/**"
+      - ".github/workflows/reassemble-full-apk.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  reassemble:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repair branch
+        uses: actions/checkout@v4
+        with:
+          ref: codex/repair-truncated-apk-1617
+
+      - name: Reassemble and validate APK
+        shell: bash
+        run: |
+          set -euo pipefail
+          output="apk/grand-intake-v2026_09_03_1617.apk"
+          cat .release-parts/v2026_09_03_1617/part-* > "$output"
+          test "$(stat -c %s "$output")" = "1605156"
+          echo "7164be1ab353a64b57672ab566f380ba230cda2e4f87cad8123107b6e81b508f  $output" | sha256sum -c -
+          unzip -t "$output"
+          apksigner="$(find "$ANDROID_HOME/build-tools" -type f -name apksigner | sort -V | tail -n 1)"
+          aapt2="$(find "$ANDROID_HOME/build-tools" -type f -name aapt2 | sort -V | tail -n 1)"
+          test -n "$apksigner"
+          test -n "$aapt2"
+          "$apksigner" verify --verbose --print-certs "$output"
+          "$aapt2" dump badging "$output" | tee /tmp/badging.txt
+          grep -F "package: name='kr.co.grand.intake' versionCode='609031617' versionName='v2026_09_03_1617'" /tmp/badging.txt
+
+      - name: Commit complete APK and remove transport parts
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rm -rf .release-parts/v2026_09_03_1617
+          rm .github/workflows/reassemble-full-apk.yml
+          git add -A
+          git commit -m "Repair full v2026_09_03_1617 APK"
+          git push origin HEAD:codex/repair-truncated-apk-1617
