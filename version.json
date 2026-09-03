@@ -1,12 +1,12 @@
 {
   "appName": "그랜드 초진설문지",
   "packageName": "kr.co.grand.intake",
-  "versionName": "1.0",
-  "versionCode": 189,
-  "apkFileName": "grand-intake-v1_0.apk",
-  "apkUrl": "https://peppermint1231.github.io/grand-intake-update/apk/grand-intake-v1_0.apk",
-  "releaseNote": "그랜드 초진설문지 v1.0 / versionCode 189 업데이트 APK 배포",
+  "versionName": "v2026_09_03_1358",
+  "versionCode": 609031358,
+  "apkFileName": "grand-intake-v2026_09_03_1358.apk",
+  "apkUrl": "https://peppermint1231.github.io/grand-intake-update/apk/grand-intake-v2026_09_03_1358.apk",
+  "releaseNote": "그랜드 초진설문지 v2026_09_03_1358 업데이트 APK 배포",
   "required": true,
-  "updatedAt": "2026-09-02 09:43:53",
+  "updatedAt": "2026-09-03 13:58:00",
   "minSupportedVersionCode": 180
 }
